@@ -8,10 +8,110 @@ body {
   width: 1920px;
   height: 1000px;
   overflow: hidden;
+  background-image: url(../img/toe.png);
+  font-family: 'Inconsolata'; monospace;
+  font-size: 30px;
 }
 
-.bg-demo {
-  background-image: url(toe.png);
-  height: 100%;
-  width: 100%;
+#block {
+  position: relative;
+  top: 5vh;
+  left: 60vh;
+  width: 50vh;
+  height: 50vh;
+  background-color: #3399CC;
+}
+
+#game {
+  position: relative;
+  top: -40vh;
+  left: 68vh;
+  z-index: 10;
+}
+
+#table {
+  border-collapse: collapse;
+}
+
+#table td {
+  width: 100px;
+  height: 100px;
+}
+
+#table table, #table td {
+  border-right: 3px solid #3399CC;
+}
+
+caption {
+  padding-bottom: 1vh;
+  font-weight: bold;
+}
+
+#score {
+  position: relative;
+  bottom: -10vh;
+  right: 8vh;
+  width: 50vh;
+  height: 18vh;
+  background-color: #3399CC;
+  border: 2px solid #00CCFF;
+}
+
+.score {
+  position: relative;
+  bottom: 5vh;
+  right: 2vh;
+  z-index: 100;
+}
+
+.score td {
+  padding-left: 10px;
+  height: 20px;
+  width: 20px;
+  font-size: 15px;
+}
+
+.NP {
+  position: relative;
+  bottom: 51vh;
+  left: 88vh;
+  z-index: 100;
+}
+
+.NP input {
+  height: 30px;
+  width: 120px;
+  background-color: white;
+  border: none;
+  font-weight: bold;
+}
+
+.NP:hover {
+  border: 3px solid #00CCFF;
+  height: 40px;
+  width: 130px;
+}
+
+.anim-border {
+  width: 50vh;
+  height: 10vh;
+  background-color: #3399CC;
+  border: 2px solid #00CCFF;
+  position: relative;
+  bottom: 40vh;
+  left: 60vh;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+.anim-border button {
+  height: 30px;
+  width: 120px;
+  background-color: white;
+  border: none;
+}
+
+.anim-border button:hover {
+  border: 3px solid #00CCFF;
 }
