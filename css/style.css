@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1920px;
+  height: 1000px;
+  overflow: hidden;
+}
+
+.bg-demo {
+  background-image: url(toe.png);
+  height: 100%;
+  width: 100%;
+}
