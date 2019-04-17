@@ -1,5 +1,5 @@
-var x = "img/croix.gif";
-var o = "img/cercle.gif";
+var x = "img/simplontransparentnoir.png";
+var o = "img/simplon2.png";
 var blank = "img/blank.jpg";
 var pause = 0;
 var all = 0;

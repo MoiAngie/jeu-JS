@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Morpion</title>
+    <title>Morpion / Simplon</title>
 
     <!-- du reset et du jquery pour la rollingborder et la police -->
     <link rel="stylesheet" href="css/reset.css">
@@ -13,14 +13,14 @@
     <!-- mon CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!--MON js -->
-    <script src="js/script.js" language="JavaScript"></script>
+    <script src="js/script_simplon.js" language="JavaScript"></script>
     <!-- DU js pour les alert de sweetalert -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </head>
 
 
-<body>
+<body id="simplon">
 
   <!-- 1er bloc avec le jeu -->
 
@@ -114,6 +114,7 @@
 <button id="morpion"><a href="morpion.html"><img onmouseover="bigLogo(this)" onmouseout="normLogo(this)"src="img/croix.gif" height="100px" width="100px"/></a>
 <button id="simplon"><a href="simplon.html"><img onmouseover="bigLogo(this)" onmouseout="normLogo(this)"src="img/simplonnoir.gif" height="100px" width="100px"/></a>
 <button id="simplon"><a href="mystere.html"><img onmouseover="bigLogo(this)" onmouseout="normLogo(this)"src="img/interro.gif" height="100px" width="100px"/></a>
+
 </div>
 
 <!--le script pour personnaliser la rollingborder > si je la bouge dans script.js, ça ne fonctionne plus :( -->
@@ -124,7 +125,7 @@
     $(function() {
         var rollingBorder = $("#block").rollingBorder({
             padding: 0, //default 5
-            color: '#00CCFF', //default #0066FF
+            color: '#FFFF00', //default black
             width: 2,
             length: "80%"
         });

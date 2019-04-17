@@ -2,10 +2,10 @@
     $.fn.extend({
         rollingBorder: function(_params) {
             var params = {
-                padding: 10,
+                padding: 5,
                 color: "",
                 width: 2,
-                length: "15%"
+                length: "80%"
             };
             $.extend(params, _params);
 

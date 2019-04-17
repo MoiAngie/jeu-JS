@@ -6,7 +6,7 @@
 
 .rolling-border-box div {
     position: absolute;
-    border: solid 0 rgba(255, 0, 0, 0.5);
+    border: solid 2px #000000;
     height: 50%;
     width: 50%;
     animation: leftToRight 2s infinite linear;
