@@ -5,17 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Morpion</title>
+
+    <!-- du reset et du jquery pour la rollingborder et la police -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="styleSheet" type="text/css" href="css/jquery.rollingBorder.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" language="JavaScript"></script>
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-
+    <!-- mon CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--MON js -->
+    <script src="js/script.js" language="JavaScript"></script>
+    <!-- DU js pour les alert de sweetalert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </head>
 
 
 <body>
+
+  <!-- 1er bloc avec le jeu -->
 
   <div id="block">
 
@@ -57,7 +64,7 @@
 
       </table>
 
-
+<!-- 2ème bloc avec le score et bouton "nouvelle partie"-->
 
 <div id="score">
 </div>
@@ -91,7 +98,7 @@
 
 <button class="NP"><input onclick="playAgain();" type="button" value="Nouvelle partie"></button>
 
-
+<!-- 3ème bloc pour la gestion de l'anim sur la bordure -->
 
 <div class="anim-border">
   <h3> Animation </h3>
@@ -99,6 +106,8 @@
 <button id="cancel">Annuler</button>
 </div>
 
+
+<!--le script pour personnaliser la rollingborder > à bouger dans le fichier script.js -->
 
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="js/jquery.rollingBorder.js"></script>

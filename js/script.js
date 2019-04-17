@@ -162,7 +162,7 @@ if ((all==0)&&(pause==0)) myChoice();
    }
 }
 function taken() {
-alert("This cell in not empty! Try another")
+swal("Occupé!", "Essaye une autre...", "warning")
 pause=1;
 }
 function myChoice() {
@@ -190,13 +190,13 @@ document.images[temp].src= o;
 process();
 }
 function ended() {
-alert("Game over! To play once more press a button 'New Game'")
+swal("Game over!", "Pour recommencer, appuie sur le bouton 'Nouvelle partie'", "error")
 }
 function process() {
 logicOne();
-if (all==1){ alert("You win!"); wn++; }
-if (all==2){ alert("You lose!"); ls++; }
-if (all==3){ alert("Draw!"); ts++; }
+if (all==1){ swal("Bravo!", "Tu as gagné", "success"); wn++; }
+if (all==2){ swal("Boohh...", "Tu as perdu", "error"); ls++; }
+if (all==3){ swal("Egalité!", "On s'en refait une?", "info"); ts++; }
 if (all!=0) {
 document.game.you.value = wn;
 document.game.computer.value = ls;
@@ -205,7 +205,7 @@ document.game.ties.value = ts;
 }
 function playAgain() {
 if (all==0) {
-if(confirm("Âû óâåðåíû ?")) reset();
+if(confirm("Quoi que qu'est-ce?")) reset();
 }
 if (all>0) reset();
 }
