@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1920px;
+  height: 1000px;
+  overflow: hidden;
+  background-image: url(../img/toe.png);
+  font-family: 'Inconsolata'; monospace;
+  font-size: 30px;
+}
+
+/*------------------------------------
+-----------1er bloc avec le jeu-------
+-------------------------------------*/
+
+#block {
+  position: relative;
+  top: 5vh;
+  left: 60vh;
+  width: 50vh;
+  height: 50vh;
+  background-color: #3399CC;
+}
+
+.jeu h3 {
+  position: relative;
+  top: -2vh;
+  left: 3vh;
+  font-weight: bold;
+}
+
+.jeu {
+  position: relative;
+  top: -40vh;
+  left: 68vh;
+  z-index: 10;
+}
+
+.case {
+  border: 3px solid white;
+  width: 120px;
+  height: 120px;
+  display: inline-block;
+  position: relative;
+  left: -2vh;
+}
+
+
+/*------------------------------------
+-----------2ème bloc avec le score-------
+-------------------------------------*/
+
+#score {
+  position: relative;
+  bottom: -10vh;
+  right: 8vh;
+  width: 50vh;
+  height: 18vh;
+  background-color: #3399CC;
+  border: 2px solid #00CCFF;
+}
+
+.score {
+  position: relative;
+  bottom: 5vh;
+  right: 2vh;
+  z-index: 100;
+}
+
+.score td {
+  padding-left: 10px;
+  height: 20px;
+  width: 20px;
+  font-size: 15px;
+}
+
+
+/*-------------------------------------------------
+-----2ème bloc avec le bouton nouvelle partie-------
+--------------------------------------------------*/
+
+
+/*.NP {
+  position: relative;
+  bottom: 51vh;
+  left: 88vh;
+  z-index: 100;
+}
+
+.NP input {
+  height: 30px;
+  width: 120px;
+  background-color: white;
+  border: none;
+  font-weight: bold;
+}
+
+.NP:hover {
+  border: 3px solid #00CCFF;
+  height: 40px;
+  width: 130px;
+}
+
+
+/*------------------------------------
+-----------3ème bloc avec l'anim-border-------
+-------------------------------------*/
+
+.anim-border {
+  width: 50vh;
+  height: 10vh;
+  background-color: #3399CC;
+  border: 2px solid #00CCFF;
+  position: relative;
+  bottom: 20vh;
+  left: 60vh;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+.anim-border button {
+  height: 30px;
+  width: 120px;
+  background-color: white;
+  border: none;
+}
+
+.anim-border button:hover {
+  border: 3px solid #00CCFF;
+}
+
+
+/*------------------------------------
+-----------4ème bloc avec le thème-------
+-------------------------------------*/
+
+.thema {
+  width: 20vh;
+  height: 50vh;
+  background-color: #3399CC;
+  border: 2px solid #00CCFF;
+  position: relative;
+  bottom: 96vh;
+  left: 30vh;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+.thema button{
+  background-repeat: no-repeat;
+}
+
+.thema h3 {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+/*--------------------------------------------------
+-----------changement pour la version Simplon-------
+----------------------------------------------------*/
+
+
+#simplon {
+  background-image: url(../img/simplontransparentnoir.png);
+}
+
+#simplon #block, #simplon #score, #simplon .anim-border, #simplon .thema {
+  background-color: #FF9900;
+  border-color: #FFFF00;
+}
+
+#simplon #table table, #simplon #table td {
+  border-right: 3px solid #FF9900;
+}
+
+#simplon .NP:hover, #simplon .anim-border button:hover {
+  border-color: #FFFF00;
+}
+
+
+/*--------------------------------------------------
+-----------changement pour la version mystère-------
+----------------------------------------------------*/
+#mystere {
+  background-image: url(../img/interro.jpg);
+}
+
+#mystere #block, #mystere #score, #mystere .anim-border, #mystere .thema {
+  background-color: #99CC99;
+  border-color: #33FF99;
+}
+
+#mystere #table table, #mystere #table td {
+  border-right: 3px solid #99CC99;
+}
+
+#mystere .NP:hover, #mystere .anim-border button:hover {
+  border-color: #33FF99;
+}
