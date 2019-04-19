@@ -1,12 +1,27 @@
-/* Je définis mes variables à utiliser dans le jeu au niveau du visuel */
+body onload="alert('Votre Message')">>
+
+
+
+/*  mes fonctions pour animer les boutons "thèmes" */
+
+function bigLogo(x) {
+  x.style.height = "120px";
+  x.style.width = "120px";
+}
+
+function normLogo(x) {
+  x.style.height = "100px";
+  x.style.width = "100px";
+}
+
+/* Je définis mes variables à utiliser dans le jeu au niveau du visuel
 
 var X = "img/Romain.png";
-var O = "img/benoit.png";
-var blank = "img/blank.jpg";
+var O = "img/benoit.png";*/
 
 /*  je crée une variable pour définir à qui c'est le tour (pair = joueur N°1, impair = joueur N°2) */
 
-var i = 0;
+let i = 0;
 
 /*  je définis alors toutes les cases du jeu par une constante  */
 
@@ -28,7 +43,7 @@ qu'il vide toutes les cases après pour recommencer une partie*/
 
 function afficheWinner(winner) {
   alert (`${winner} a gagné !`);
-  cases.forEach(tete => tete.innerHTML = '');
+  cases.forEach(el => el.innerHTML = '');
 }
 
 /*je mets ensuite les fonctions qui vont dire si c'est gagné quand 3 cases alignées ont la même head et donc pas vides:)/*
