@@ -205,7 +205,7 @@ document.game.ties.value = ts;
 }
 function playAgain() {
 if (all==0) {
-if(confirm("Quoi que qu'est-ce?")) reset();
+if(confirm("Quoi, que, qu'est-ce?")) reset();
 }
 if (all>0) reset();
 }

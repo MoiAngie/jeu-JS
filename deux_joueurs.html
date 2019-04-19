@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Morpion / version 2 joueurs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--  différents liens pour présentation, police -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <!-- mon CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/deux_joueurs.css" />
+</head>
+<body>
+    <div class="box">
+      <h3>Le jeu du morpion</h3>
+        <div class="morpion">
+            <div class="case"></div>
+            <div class="case"></div>
+            <div class="case"></div>
+            <div class="case"></div>
+            <div class="case"></div>
+            <div class="case"></div>
+            <div class="case"></div>
+            <div class="case"></div>
+            <div class="case"></div>
+        </div>
+    </div>
+
+
+
+    <!--  2ème bloc pour changer de thème-->
+
+    <div class="thema">
+      <h3> Change de thème </h3>
+    <button id="morpion"><a href="morpion.html"><img onmouseover="bigLogo(this)" onmouseout="normLogo(this)"src="img/croix.gif" height="100px" width="100px"/></a>
+    <button id="simplon"><a href="simplon.html"><img onmouseover="bigLogo(this)" onmouseout="normLogo(this)"src="img/simplonnoir.gif" height="100px" width="100px"/></a>
+    <button id="mystere"><a href="mystere.html"><img onmouseover="bigLogo(this)" onmouseout="normLogo(this)"src="img/interro.gif" height="100px" width="100px"/></a>
+    <button id="deux_joueurs"><a href="deux_joueurs.html"><img onmouseover="bigLogo(this)" onmouseout="normLogo(this)"src="img/2.png" height="100px" width="100px"/></a>
+    </div>
+
+
+    <!--MON js -->
+    <script src="js/deux_joueurs.js"></script>
+    <!-- DU js pour les alert de sweetalert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
